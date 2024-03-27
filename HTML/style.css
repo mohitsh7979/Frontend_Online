@@ -1,0 +1,15 @@
+.h{
+    color: red;
+    border: 2px solid black;
+    text-align: center;
+    background-color: greenyellow;
+    padding: 10px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px blue;
+    border-radius: 80px;
+}
+
+#box2{
+    color: green;
+}
