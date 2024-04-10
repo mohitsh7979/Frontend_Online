@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+
+            background: radial-gradient(blueviolet,black);
+        }
+
+        .container{
+
+            height: 100vh;
+            width: 70%;
+            margin: auto;
+        
+           
+        }
+
+        .header{
+
+            height: 20%;
+            background-color: burlywood;
+            border: 2px solid black;
+        }
+
+        .main{
+
+            height: 80%;
+            /* background-color: beige; */
+            display: flex;
+            /* margin: 5px; */
+        }
+
+        .left{
+
+            height: 100%;
+            width: 30%;
+            border: 2px solid black;
+        }
+
+        .right{
+
+            height: 100%;
+            width: 70%;
+            border: 2px solid black;
+        }
+
+        .left-upper{
+
+            height: 30%;
+            background-color: palevioletred;
+            
+        }
+
+        .left-lower{
+
+            height: 70%;
+            background-color: burlywood;
+         
+           
+        }
+
+        .right-upper{
+
+            height: 70%;
+            display: flex;
+        }
+
+        .right-lower{
+
+            height: 30%;
+            background-color: azure;
+           
+        }
+
+        .right-left{
+
+            width: 60%;
+            height: 100%;
+            background-color: burlywood;
+            border: 2px solid black;
+            
+        }
+
+        .right-right{
+            width: 40%;
+            border: 2px solid black;
+          
+        }
+
+        .right-right-upper{
+
+            height: 50%;
+            background-color: palevioletred;
+            
+          
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header"></div>
+        <div class="main">
+            <div class="left">
+                <div class="left-upper"></div>
+                <div class="left-lower"></div>
+            </div>
+            <div class="right">
+                <div class="right-upper">
+                    <div class="right-left"></div>
+                    <div class="right-right">
+                        <div class="right-right-upper"></div>
+                        <div class="right-right-upper"></div>
+                    </div>
+                </div>
+                <div class="right-lower"></div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>
