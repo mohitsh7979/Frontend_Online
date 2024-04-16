@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Page</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        background-color: black;
+      }
+
+      .h {
+        color: red;
+        border: 2px solid;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 50px;
+        border-radius: 50px;
+        /* border-radius: 100px  0px 100px 0px; */
+        box-shadow: 0px 0px 8px;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 8px yellow;
+        animation-name: naitik;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        position: absolute;
+        width: 30%;
+      }
+
+      .m {
+        color: red;
+        border: 2px solid;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 50px;
+        border-radius: 50px;
+        /* border-radius: 0px  100px 0px 100px; */
+        box-shadow: 0px 0px 8px;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 8px yellow;
+        animation-name: mohit;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        position: absolute;
+        width: 30%;
+      }
+
+      @keyframes naitik {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes mohit {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(-360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="h"></h1>
+
+    <h1 class="m"></h1>
+
+    <script>
+      function genrate() {
+        return Math.floor(Math.random() * 255);
+      }
+
+      // let color = `rgb(${genrate()},${genrate()},${genrate()})`
+
+      setInterval(() => {
+        document.querySelector(
+          ".h"
+        ).style.boxShadow = `inset 0px 0px 50px rgb(${genrate()},${genrate()},${genrate()})`;
+      }, 1000);
+
+      setInterval(() => {
+        document.querySelector(
+          ".m"
+        ).style.boxShadow = `inset 0px 0px 50px rgb(${genrate()},${genrate()},${genrate()})`;
+      }, 1000);
+    </script>
+  </body>
+</html>
